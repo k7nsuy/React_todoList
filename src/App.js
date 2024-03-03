@@ -1,16 +1,22 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { Side } from "./components/Side";
+import { InputReset } from "./components/InputReset";
+import { TodoList } from "./components/TodoList";
+import { Count } from "./components/Count";
 
 function App() {
   return (
-    <>
-      <Header />
-      <h1 className="active">Hello, Stranger !</h1>
-      <Side />
-      <Footer />
-    </>
+    <div className="App">
+      <h1>Count</h1>
+      <Count />
+      <br></br>
+      <hr></hr>
+      <h1>Input Reset</h1>
+      <InputReset />
+      <br></br>
+      <hr></hr>
+      <h1>Todo List</h1>
+      <TodoList />
+    </div>
   );
 }
 
