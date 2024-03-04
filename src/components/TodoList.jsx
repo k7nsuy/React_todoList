@@ -21,7 +21,7 @@ export function TodoList() {
       <input value={text} onChange={onChange} />
       <button onClick={addList}>Add List</button>
       <ul>
-        {todoList.map((todo) => {
+        {todo.map((todo) => {
           for (let i = 0; i < todo.length; i++) {
             <li key={i}>{todo}</li>;
           }
