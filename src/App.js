@@ -4,6 +4,7 @@ import { TodoList } from "./components/TodoList";
 import { Count } from "./components/Count";
 import { MultiInputs } from "./components/Multi_Inputs";
 import { UserList } from "./components/ArrayRendering";
+import { CreateNewList } from "./components/CreateNewList";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
       <hr></hr>
       <h1>* Array Rendering *</h1>
       <UserList />
+      <br></br>
+      <hr></hr>
+      <h1> * Create NewList *</h1>
+      <CreateNewList />
       <br></br>
       <hr></hr>
       <h1>* Todo List *</h1>

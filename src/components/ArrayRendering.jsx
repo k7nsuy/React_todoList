@@ -27,9 +27,9 @@ export function UserList() {
 
   return (
     <div>
-      <Users user={users[0]} />
-      <Users user={users[1]} />
-      <Users user={users[2]} />
+      {users.map((user) => (
+        <Users user={user} key={user.id} />
+      ))}
     </div>
   );
 }
