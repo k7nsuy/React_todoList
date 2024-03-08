@@ -1,6 +1,6 @@
 import "./App.css";
 import { InputReset } from "./components/InputReset";
-import { TodoList } from "./components/TodoList";
+import { TodoApp } from "./components/TodoList";
 import { Count } from "./components/Count";
 import { MultiInputs } from "./components/Multi_Inputs";
 import { UserList } from "./components/ArrayRendering";
@@ -30,7 +30,7 @@ function App() {
       <br></br>
       <hr></hr>
       <h1>* Todo List *</h1>
-      <TodoList />
+      <TodoApp />
     </div>
   );
 }

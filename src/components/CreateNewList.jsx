@@ -51,7 +51,7 @@ export function CreateNewList() {
 
   const { username, email } = inputs;
 
-  const [users, setOurUsers] = useState([
+  const ourUsers = [
     {
       id: 1,
       username: "velopert",
@@ -67,7 +67,9 @@ export function CreateNewList() {
       username: "liz",
       email: "liz@example.com",
     },
-  ]);
+  ];
+
+  const [users, setOurUsers] = useState(ourUsers);
 
   const nextId = useRef(users.length + 1);
 
