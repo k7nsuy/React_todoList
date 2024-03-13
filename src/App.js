@@ -5,6 +5,8 @@ import { Count } from "./components/Count";
 import { MultiInputs } from "./components/Multi_Inputs";
 import { UserList } from "./components/ArrayRendering";
 import { CreateNewList } from "./components/CreateNewList";
+import { TicTacToe } from "./components/TicTacToe";
+import { Fruits } from "./components/SellFruits";
 
 function App() {
   return (
@@ -31,6 +33,14 @@ function App() {
       <hr></hr>
       <h1>* Todo List *</h1>
       <TodoApp />
+      <br></br>
+      <hr></hr>
+      <h1>* Tic Tac Toe *</h1>
+      <TicTacToe />
+      <br></br>
+      <hr></hr>
+      <h1>* Fruits *</h1>
+      <Fruits />
     </div>
   );
 }

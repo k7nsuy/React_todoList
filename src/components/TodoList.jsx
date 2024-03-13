@@ -33,8 +33,10 @@ export function TodoApp() {
   const reset = {
     toDo: "",
   };
+  const count = 1;
 
   const [text, setText] = useState(reset);
+  const { toDo } = text;
 
   function onChange(e) {
     const { name, value } = e.target;
@@ -45,11 +47,9 @@ export function TodoApp() {
     setTodo(todo.filter((todo) => todo.id !== id));
   }
 
-  const { toDo } = text;
-
   const [todo, setTodo] = useState(todoList);
-
-  const nextId = useRef(1);
+  console.log(todo);
+  const nextId = useRef(count);
 
   function addList() {
     const newToDo = {
